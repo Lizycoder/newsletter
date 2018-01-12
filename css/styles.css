@@ -12,13 +12,14 @@ body {
 	font-family:Lato, Arial, sans-serif;
 	font-weight:400;
 }
-.form__logo {
-	position:absolute;
-	left:50%;
-	transform:translate(-50%, -50%);
-	top:0;
-}
+
 .form__close {
+	height:30px;
+	width: 30px;
+	background: url('../img/close.png');
+	background-size: cover;
+	border-style:none;
+	outline:none;
 	position:absolute;
 	right:1%;
 	top:2%;
@@ -43,6 +44,13 @@ body {
 	color:#538fff;
 	margin:0;
 }
+.form__title::before {
+	content: url('../img/Icon.png');
+	position:absolute;
+	left:50%;
+	transform:translate(-50%, -50%);
+	top:0;
+}
 .form__info {
 	font-size:22px;
 	color:#fff;
@@ -51,7 +59,7 @@ body {
 }
 .form__email, .form__btn{
 	display:inline-block;
-	line-height:1;
+	line-height:1.1;
 	font-size:20px;
 	padding:20px;
 	border-radius:10px;
@@ -103,5 +111,5 @@ background:linear-gradient(to right, #6e8ad3, #8b77c4 60%);
 .form__close:hover,
 .form__close:active,
 .form__close:focus {
-	opacity: .5;
+	transform: scale(1.3);
 }
